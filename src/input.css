@@ -1,0 +1,42 @@
+/* Google font Link */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+@import "tailwindcss";
+
+@theme{
+    --color-primary : #CC1609;
+    --color-secondary : #968B7C;
+    --color-white-text : #FFFFFF;
+    --color-subHeading-text : #CB5549;
+    --font-roboto : "Roboto Flex", sans-serif;
+
+   /*  */
+
+  /* --shadow-primary: 0 4px 25px -4px rgba(0, 0, 0, 0.1); */
+  /* --shadow-secondary: 0 10px 15px -3px rgba(0, 0, 0, 0.1), */
+    /* 0 4px 6px -4px rgba(0, 0, 0, 0.1); */
+
+}
+@layer{
+    .section-container{
+        @apply max-w-[1400px] container mx-auto px-8;
+    }
+    
+    /* .container {
+    max-width: var(--container-max-width);
+    padding-left: var(--container-padding-x);
+    padding-right: var(--container-padding-x);
+    margin-left: auto;
+    margin-right: auto;
+    } */
+
+    .button-box{
+        @apply bg-transparent text-black ring-1 ring-inset ring-primary cursor-pointer font-semibold rounded-md px-3 py-2 hover:bg-primary hover:text-white transition duration-500;
+    }
+    .button2-box{
+        @apply hover:text-black hover:bg-white ring-1 ring-inset ring-primary cursor-pointer rounded-md px-5 py-3 bg-primary text-white transition duration-500 font-semibold;
+    }
+    
+}
+
+    
